@@ -1,5 +1,6 @@
 const chicken = require('./chicken')
 const simchicken = require('./simchicken')
+const chickenToSim = require('./tosimchick');
 const fs = require('fs');
 
 function decode(octBytes) {
@@ -16,6 +17,10 @@ function decode(octBytes) {
 const CHICKEN = fs.readFileSync('./code.chk' , {encoding: 'utf8'});
 // let CHICKEN = fs.readFileSync('./code.schk' , {encoding: 'utf8'});
 // CHICKEN = simchicken.simchicken(CHICKEN);
+
 // console.log(CHICKEN);
-const Chick = chicken.chicken("Hello hack in the wood 2019", CHICKEN);
-console.log(decode(Chick));
+// const Chick = chicken.chicken("Hello hack in the wood 2019", CHICKEN);
+// console.log(Chick)
+// console.log(decode(Chick));
+
+console.log(chickenToSim.tosimchick(CHICKEN));
