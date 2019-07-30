@@ -1,12 +1,17 @@
+const IGNORELINE = -1;
+
 exports.simchicken = (input) => {
     return input
         .split('\r\n')
         .map(wordToChicken)
+        .filter(i => i !== IGNORELINE)
         .join('\r\n');
 }
 
 const wordToChicken = (word, index) => {
     switch (word) {
+        case '':
+            return IGNORELINE;
         case 'axe':
             return howMuchChicken(0);
         case 'chicken':

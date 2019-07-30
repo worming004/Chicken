@@ -1,30 +1,68 @@
 push 82
+BBQ
 push 111
+BBQ
+add
 push 118
+BBQ
+add
 push 118
+BBQ
+add
 push 121
+BBQ
+add
 push 42
+BBQ
+add
 push 82
+BBQ
+add
 push 107
+BBQ
+add
 push 109
+BBQ
+add
 push 117
+BBQ
+add
 push 42
+BBQ
+add
 push 115
+BBQ
+add
 push 120
+BBQ
+add
 push 42
+BBQ
+add
 push 126
+BBQ
+add
 push 114
+BBQ
+add
 push 111
+BBQ
+add
 push 42
+BBQ
+add
 push 129
+BBQ
+add
 push 121
+BBQ
+add
 push 121
-push 110
-push 42
-push 60
-push 58
-push 59
-push 67
-push 
+BBQ
+add
+push 13
+peck
+
+push 13
 pick
 axe
