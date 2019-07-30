@@ -1,5 +1,5 @@
 exports.simchicken = (input) => {
-    input
+    return input
         .split('\r\n')
         .map(wordToChicken)
         .join('\r\n');
@@ -30,7 +30,7 @@ const wordToChicken = (word, index) => {
     }
     if (word.startsWith('push')) {
         const splitted = word.split(' ');
-        return howMuchChicken(splitted[1] - 10);
+        return howMuchChicken(parseInt(splitted[1]) - 10);
     }
     throw new Error(`impossible to parse ${word} at line ${index}`);
 }
@@ -41,7 +41,8 @@ const howMuchChicken = (nbr) => {
 
     for (var i = 0; i < nbr; i++) {
         if (!first) result += ' ';
-        first = true;
+        first = false;
         result += 'chicken';
     }
+    return result;
 }
