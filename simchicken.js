@@ -37,7 +37,7 @@ const wordToChicken = (word, index) => {
         const splitted = word.split(' ');
         return howMuchChicken(parseInt(splitted[1]));
     }
-    throw new Error(`impossible to parse ${word} at line ${index}`);
+    throw new Error(`impossible to parse ${word} at line ${index + 1}`);
 }
 
 const howMuchChicken = (nbr) => {
